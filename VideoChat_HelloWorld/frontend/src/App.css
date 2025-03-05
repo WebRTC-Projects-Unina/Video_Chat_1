@@ -1,0 +1,158 @@
+/* SELETTORE UNIVERSALE */
+*{
+  font-family: "Century Gothic", Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+/* Personalizzazione barra di scorrimento */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(79, 136, 198);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(79, 136, 198);
+}
+
+.big-text{
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.small-text{
+  font-size: 14px;
+}
+
+img{
+  width: 50px;
+}
+
+.btn-signin{
+  padding: 18px 28px;
+  background: rgb(79, 136, 198);
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: .9em;
+}
+
+.btn-signin:hover{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu{
+  display: flex;
+  width: 100%;
+  z-index: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li{
+  display: inline-block;
+}
+
+.menu li a{
+  padding: 25px; 
+  display: block;
+}
+
+a{
+  text-decoration: none; 
+  color: #fff;
+}
+
+a:visited{
+  color: #fff;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.accedi{
+  position: absolute;
+  right: 5%;
+}
+
+/* INTRO */
+.intro{
+  /* position: relative; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container-intro{
+  width: 100%;
+  z-index: 1;
+  /* position: relative; */
+}
+
+.intro-text{
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.intro-text p{
+  color: rgb(32, 120, 215);
+}
+
+.intro-text .small-text{
+  color: #fff;
+}
+
+/* VIDEO */
+#myVideo{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+}
+
+
+/* CONTAINER CHI SIAMO */
+.container-chisiamo{
+  margin-top: 100px;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.div-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-trasparente */
+  z-index: 9999; /* Sempre sopra gli altri elementi */
+}
+
+.loader {
+  animation: rotate 1s linear infinite;
+  width: 75px; 
+  height: 75px;
+}
